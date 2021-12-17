@@ -1,0 +1,409 @@
+/*Jonah Armstrong*/
+/*Last Edited 12/12/2021*/
+
+/* prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+/* header stuff here */
+header {
+    display:flex;
+    justify-content: center;
+    background-color:#000000;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.wrapper {
+    padding-left: 1vw;
+    color: white;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+}
+
+.logo {
+    color: #5CC1E6;
+    font-size: 325%;
+    margin-left: 3em;
+    font-family: 'Major Mono Display', monospace;
+    padding-top: 40px;
+}
+
+.bigger {
+    display:flex;
+    padding: 1.5rem 1vw 1rem 1vw;
+    font-size: 90%;
+    font-family: 'Major Mono Display', monospace;
+    color: #ffffff;
+    background-color: #000000;
+    width: 69rem;
+    margin: 1rem;
+}
+
+header h1 {
+    padding-top: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    margin:auto;
+}
+header p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-family: 'Major Mono Display', monospace;
+    text-align:center;
+    margin: auto;
+}
+
+header img {
+    margin: 1rem;
+}
+
+.floatRight {
+    color: white;
+    float: right;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+}
+
+/* navigation stuff here */
+/*SMALL SCREENS*/
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+            margin: 2rem;
+            padding: 1rem 2vw;
+            list-style-type: none;
+    }
+
+    nav .active a {
+        background-color: solid 2px #ffffff;
+        background-image: linear-gradient(to bottom, #9e9e9e, #2f6174);
+        color: rgb(255, 255, 255);
+    }
+    nav a:hover {
+        color: rgb(255, 255, 255);
+        background-color: #3d7e96;
+    }  
+
+    nav a{
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: solid 1px #5CC1E6;
+        background-color:#5CC1E6;
+        color: #ffffff;
+    }
+
+    nav .active a {
+        background-color: #337377;
+        color: black;
+    }
+
+    main div {
+        color:#0d3657;
+        background-color: rgb(223, 223, 223);
+        justify-content: center;
+        padding: 20px;   
+    }
+
+} 
+/*end of the media query*/
+
+/*BIG SCREENS*/
+@media only screen and (min-width: 601px) {
+    nav {
+        border-top: solid 5px #a9b3b6;  
+    }
+    
+    nav ul {
+        margin: 0 2vw;
+        list-style-type: none;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+        font-family: 'Nixie One', cursive;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 6.5rem .7rem 6.5em;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #5CC1E6;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    nav .active a {
+        background-color: solid 2px #70d6dd;
+        background-image: linear-gradient(to bottom, #5CC1E6 #337377);
+        color: rgb(255, 255, 255);
+        font-family: 'Nixie One', cursive;
+    }
+    nav a:hover {
+        color: rgb(6, 56, 63);
+        font-family: 'Nixie One', cursive;
+    }
+    
+    nav div {
+        background-color:#5CC1E6;
+        display: flex;
+        justify-content: center;
+        font-family: 'Nixie One', cursive;
+    }
+
+    nav li {
+        flex-grow: 1;
+        font-family: 'Nixie One', cursive;
+    }
+
+/*   Main stuff here */
+    main {
+        padding: 1rem 2vw;
+    }
+    
+    main h1 {
+        color:#ffffff ;
+        margin: .5rem 0 .8rem 0;
+        font-weight: 200;
+        font-family: 'Nixie One', cursive;
+    }
+    main h2 {
+        color: #4ec7e2;
+        margin-bottom: .2rem;
+        font-family: 'Nixie One', cursive;
+    }
+
+    main h3 {
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-size: 3rem;
+        text-decoration: bold;
+        margin: .5rem 0 .8rem 0;
+        font-weight: 200;
+        font-family: 'Nixie One', cursive;
+    }
+    main p {
+        color: #ffffff;
+        margin: 0 0 .8rem 0;
+        line-height: 150%;
+        font-size: 1.5rem;
+        font-family: 'Nixie One', cursive;
+
+    }
+    main a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    main b{
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Nixie One', cursive;
+    }
+
+    main c{
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+        text-indent: 22px;
+        font-family: 'Nixie One', cursive;
+    }
+
+    main d{
+        color: #66d6ff;
+        text-decoration: none;
+        font-size: 400%;
+        font-family: 'Nixie One', cursive;
+    }
+
+    .image-div{
+        float:left;
+        margin-right:10px;
+        max-width: 20%;
+        max-height: 20%;
+      }
+
+    .jonahhero {
+        width: 100%;
+        margin: 0;
+    }
+
+    .jonahhero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .myForm fieldset{
+        border: 1px solid #66d6ff;
+        border-radius: 3px;
+        margin-bottom: 1rem;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .myForm legend{
+        color:#66d6ff;
+        font-size: 1.5rem;
+        font-family: 'Nixie One', cursive;
+        font-stretch: expanded;
+    }
+    
+    .myForm label{
+        margin: .5rem;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .myForm label, .myForm select, .myForm [type=text],.myForm [type=tel], .myForm [type=email], .myForm textarea {
+        display: block;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+        border: solid 1 px rgb(9, 61, 92);
+        padding: .3rem;
+        width: 250px;
+        border-radius: .3rem;
+        font-family: 'Nixie One', cursive;
+        font-size: 16px;
+    }
+    
+    .myForm textarea {
+        height: 6rem;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .myForm :required {
+        background-color: rgba(156,51,53,0.1);
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .myForm [type=submit]{
+        background-color: #4ec7e2;
+        color:#ffffff;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        margin: 1rem 0 0 1vw;
+        font-family: 'Nixie One', cursive;
+    }
+
+    figure.wrapped {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+    
+    figure.wrapped figcaption {
+        text-align: center;
+        font-size: .75rem;
+        font-family: 'Nixie One', cursive;
+    }
+
+    
+    figure.wrapped img {
+        width: 40%;
+        height: auto;
+        float: right;
+        padding: 2px;
+        margin: 1rem 1rem;
+    }
+    
+    figure.wrapped Video {
+        float:right;
+    }
+
+    .jonahGallery {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .jonahGallery section {
+        flex-basis: 50%;
+        margin: 1rem 0;
+        
+    }
+    .jonahGallery span {
+        display: block;
+        text-align: center; 
+        font-weight: 700;
+        color: #337377;
+    }
+    .jonahGallery img {
+        height: auto;
+    }
+    
+    .jonahGallery img:hover {
+        box-shadow: 0px 0px 10px black;
+    }
+
+    main div {
+        color:#ffffff;
+        background-color: rgb(0, 0, 0);
+        justify-content: center;
+        padding: 20px;
+        
+    }
+
+    figure {
+        width: 40%;
+        height: auto;
+        padding: 2px;
+        margin: 0rem 0rem;
+    }
+
+} /*End of the media query*/
+
+/*Footer stuff here */
+footer {
+    border-top: solid #5CC1E6 4px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    font-size: .8rem;
+    padding: 1rem 0;
+    clear: both;
+    font-family: 'Nixie One', cursive;
+    text-decoration: none;
+}
+
+footer a {
+    color: #ffffff;
+    font-family: 'Nixie One', cursive;
+    text-decoration: none;
+}
+
+footer div {
+    background-color: #000000;
+    color:#ffffff;
+    font-family: 'Nixie One', cursive;
+}
+
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+
+}
